@@ -1,0 +1,26 @@
+﻿<Window x:Class="NLH.AdminPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NLH"
+        mc:Ignorable="d"
+        Title="AdminPage" Height="450" Width="703" Background="#FFC2D1DE">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="684*"/>
+            <ColumnDefinition Width="11*"/>
+        </Grid.ColumnDefinitions>
+        <Image HorizontalAlignment="Left" Height="291" VerticalAlignment="Top" Width="474" Source="image/presentation.JPG" Margin="199,89,0,0"/>
+        <Label Content="LE NORTHERN LIGHTS HOSPITAL - admin Page" HorizontalAlignment="Left" Margin="175,10,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Showcard Gothic" Foreground="#FF0B1B66" Width="474" Height="41"/>
+        <Menu HorizontalAlignment="Left" Height="147" Margin="10,89,0,0" VerticalAlignment="Top" Width="171" Background="#FF9DCAF0">
+           
+            <MenuItem Header="Gestion  de Medicins" Height="37" Width="171" FontSize="14" FontWeight="Bold" Foreground="#FF0B0546" Click="MenuItem_Click"/>
+            <MenuItem Header="Gestion de Preposes" Height="37" Width="171" FontSize="14" FontWeight="Bold" Foreground="#FF0B0546" Click="MenuItem_Click_1"/>
+            <MenuItem x:Name="menuTab" Header="Tableau de consultation" Height="37" Width="171" FontSize="14" FontWeight="Bold" Foreground="#FF0B0546" Click="menuTab_Click"/>
+            <MenuItem x:Name="Quitter" Header="Quitter" Height="37" Width="171" FontSize="14" FontWeight="Bold" Foreground="#FF0B0546" Click="Quitter_Click" />
+        </Menu>
+        <Image HorizontalAlignment="Left" Height="53" Margin="65,10,0,0" VerticalAlignment="Top" Width="46" Source="image/l2.png" RenderTransformOrigin="1.264,0.535"/>
+
+    </Grid>
+</Window>

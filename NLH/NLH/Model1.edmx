@@ -1,0 +1,717 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="nhlModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="CompagnieAssurance">
+          <Key>
+            <PropertyRef Name="IdCompagnie" />
+          </Key>
+          <Property Name="IdCompagnie" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NomCompagnie" Type="ntext" />
+        </EntityType>
+        <EntityType Name="Departement">
+          <Key>
+            <PropertyRef Name="IdDepartement" />
+          </Key>
+          <Property Name="IdDepartement" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NomDepartement" Type="ntext" />
+        </EntityType>
+        <EntityType Name="DossierAdmission">
+          <Key>
+            <PropertyRef Name="IdAdmission" />
+          </Key>
+          <Property Name="IdAdmission" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ChirurgieProgramme" Type="nchar" MaxLength="10" />
+          <Property Name="DateAdmission" Type="date" />
+          <Property Name="DateChirurgie" Type="date" />
+          <Property Name="DateConge" Type="date" />
+          <Property Name="IdPatient" Type="int" />
+          <Property Name="NumeroLit" Type="int" />
+          <Property Name="Commodite" Type="varchar" MaxLength="3" />
+        </EntityType>
+        <EntityType Name="Lit1">
+          <Key>
+            <PropertyRef Name="NumeroLit" />
+          </Key>
+          <Property Name="NumeroLit" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Occupe" Type="nchar" MaxLength="10" />
+          <Property Name="NumeroType" Type="int" />
+          <Property Name="IdDepartament" Type="int" />
+        </EntityType>
+        <EntityType Name="Medicin">
+          <Key>
+            <PropertyRef Name="IdMedicin" />
+          </Key>
+          <Property Name="IdMedicin" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nom" Type="ntext" />
+          <Property Name="Prenom" Type="ntext" />
+          <Property Name="Specialite" Type="ntext" />
+        </EntityType>
+        <EntityType Name="PaiementFrais">
+          <Key>
+            <PropertyRef Name="IdPaiement" />
+          </Key>
+          <Property Name="IdPaiement" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FraisChambre" Type="float" />
+          <Property Name="FraisComodite" Type="float" />
+          <Property Name="MontantFacture" Type="float" />
+          <Property Name="IdAdmission" Type="int" />
+        </EntityType>
+        <EntityType Name="Parent">
+          <Key>
+            <PropertyRef Name="RefParent" />
+          </Key>
+          <Property Name="RefParent" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nom" Type="ntext" />
+          <Property Name="Prenom" Type="ntext" />
+          <Property Name="Adresse" Type="ntext" />
+          <Property Name="Ville" Type="ntext" />
+          <Property Name="Province" Type="ntext" />
+          <Property Name="CodePostal" Type="ntext" />
+          <Property Name="Telephone" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="Patient">
+          <Key>
+            <PropertyRef Name="IdPatient" />
+          </Key>
+          <Property Name="IdPatient" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NSS" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="DateNaissance" Type="date" />
+          <Property Name="Nom" Type="ntext" />
+          <Property Name="Prenom" Type="ntext" />
+          <Property Name="TypePatient" Type="ntext" />
+          <Property Name="Adresse" Type="ntext" />
+          <Property Name="Ville" Type="ntext" />
+          <Property Name="Province" Type="ntext" />
+          <Property Name="CodePostal" Type="ntext" />
+          <Property Name="Telephone" Type="nvarchar" MaxLength="50" />
+          <Property Name="IdMedicin" Type="int" />
+          <Property Name="IdCompagnie" Type="int" />
+          <Property Name="RefParent" Type="int" />
+        </EntityType>
+        <EntityType Name="Prepose">
+          <Key>
+            <PropertyRef Name="IdPrepose" />
+          </Key>
+          <Property Name="IdPrepose" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nom" Type="ntext" />
+          <Property Name="Prenom" Type="ntext" />
+          <Property Name="Specialite" Type="ntext" />
+        </EntityType>
+        <EntityType Name="sysdiagrams">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="principal_id" Type="int" Nullable="false" />
+          <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="version" Type="int" />
+          <Property Name="definition" Type="varbinary(max)" />
+        </EntityType>
+        <EntityType Name="TableUser">
+          <Key>
+            <PropertyRef Name="UserName" />
+          </Key>
+          <Property Name="UserName" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Password" Type="nvarchar" MaxLength="50" />
+          <Property Name="TypeUser" Type="nvarchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="TypeLit">
+          <Key>
+            <PropertyRef Name="NumeroType" />
+          </Key>
+          <Property Name="NumeroType" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Description" Type="ntext" />
+        </EntityType>
+        <Association Name="FK_DossierAdmission_Lit1">
+          <End Role="Lit1" Type="Self.Lit1" Multiplicity="0..1" />
+          <End Role="DossierAdmission" Type="Self.DossierAdmission" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Lit1">
+              <PropertyRef Name="NumeroLit" />
+            </Principal>
+            <Dependent Role="DossierAdmission">
+              <PropertyRef Name="NumeroLit" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DossierAdmission_Patient">
+          <End Role="Patient" Type="Self.Patient" Multiplicity="0..1" />
+          <End Role="DossierAdmission" Type="Self.DossierAdmission" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Patient">
+              <PropertyRef Name="IdPatient" />
+            </Principal>
+            <Dependent Role="DossierAdmission">
+              <PropertyRef Name="IdPatient" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Lit1_Departement">
+          <End Role="Departement" Type="Self.Departement" Multiplicity="0..1" />
+          <End Role="Lit1" Type="Self.Lit1" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Departement">
+              <PropertyRef Name="IdDepartement" />
+            </Principal>
+            <Dependent Role="Lit1">
+              <PropertyRef Name="IdDepartament" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Lit1_TypeLit">
+          <End Role="TypeLit" Type="Self.TypeLit" Multiplicity="0..1" />
+          <End Role="Lit1" Type="Self.Lit1" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TypeLit">
+              <PropertyRef Name="NumeroType" />
+            </Principal>
+            <Dependent Role="Lit1">
+              <PropertyRef Name="NumeroType" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PaiementFrais_DossierAdmission">
+          <End Role="DossierAdmission" Type="Self.DossierAdmission" Multiplicity="0..1" />
+          <End Role="PaiementFrais" Type="Self.PaiementFrais" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DossierAdmission">
+              <PropertyRef Name="IdAdmission" />
+            </Principal>
+            <Dependent Role="PaiementFrais">
+              <PropertyRef Name="IdAdmission" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Patient_CompagnieAssurance">
+          <End Role="CompagnieAssurance" Type="Self.CompagnieAssurance" Multiplicity="0..1" />
+          <End Role="Patient" Type="Self.Patient" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CompagnieAssurance">
+              <PropertyRef Name="IdCompagnie" />
+            </Principal>
+            <Dependent Role="Patient">
+              <PropertyRef Name="IdCompagnie" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Patient_Medicin">
+          <End Role="Medicin" Type="Self.Medicin" Multiplicity="0..1" />
+          <End Role="Patient" Type="Self.Patient" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Medicin">
+              <PropertyRef Name="IdMedicin" />
+            </Principal>
+            <Dependent Role="Patient">
+              <PropertyRef Name="IdMedicin" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Patient_Parent">
+          <End Role="Parent" Type="Self.Parent" Multiplicity="0..1" />
+          <End Role="Patient" Type="Self.Patient" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Parent">
+              <PropertyRef Name="RefParent" />
+            </Principal>
+            <Dependent Role="Patient">
+              <PropertyRef Name="RefParent" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="nhlModelStoreContainer">
+          <EntitySet Name="CompagnieAssurance" EntityType="Self.CompagnieAssurance" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Departement" EntityType="Self.Departement" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DossierAdmission" EntityType="Self.DossierAdmission" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Lit1" EntityType="Self.Lit1" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Medicin" EntityType="Self.Medicin" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="PaiementFrais" EntityType="Self.PaiementFrais" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Parent" EntityType="Self.Parent" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Patient" EntityType="Self.Patient" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Prepose" EntityType="Self.Prepose" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TableUser" EntityType="Self.TableUser" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="TypeLit" EntityType="Self.TypeLit" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK_DossierAdmission_Lit1" Association="Self.FK_DossierAdmission_Lit1">
+            <End Role="Lit1" EntitySet="Lit1" />
+            <End Role="DossierAdmission" EntitySet="DossierAdmission" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DossierAdmission_Patient" Association="Self.FK_DossierAdmission_Patient">
+            <End Role="Patient" EntitySet="Patient" />
+            <End Role="DossierAdmission" EntitySet="DossierAdmission" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Lit1_Departement" Association="Self.FK_Lit1_Departement">
+            <End Role="Departement" EntitySet="Departement" />
+            <End Role="Lit1" EntitySet="Lit1" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Lit1_TypeLit" Association="Self.FK_Lit1_TypeLit">
+            <End Role="TypeLit" EntitySet="TypeLit" />
+            <End Role="Lit1" EntitySet="Lit1" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PaiementFrais_DossierAdmission" Association="Self.FK_PaiementFrais_DossierAdmission">
+            <End Role="DossierAdmission" EntitySet="DossierAdmission" />
+            <End Role="PaiementFrais" EntitySet="PaiementFrais" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Patient_CompagnieAssurance" Association="Self.FK_Patient_CompagnieAssurance">
+            <End Role="CompagnieAssurance" EntitySet="CompagnieAssurance" />
+            <End Role="Patient" EntitySet="Patient" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Patient_Medicin" Association="Self.FK_Patient_Medicin">
+            <End Role="Medicin" EntitySet="Medicin" />
+            <End Role="Patient" EntitySet="Patient" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Patient_Parent" Association="Self.FK_Patient_Parent">
+            <End Role="Parent" EntitySet="Parent" />
+            <End Role="Patient" EntitySet="Patient" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="nhlModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="CompagnieAssurance">
+          <Key>
+            <PropertyRef Name="IdCompagnie" />
+          </Key>
+          <Property Name="IdCompagnie" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NomCompagnie" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Patients" Relationship="Self.FK_Patient_CompagnieAssurance" FromRole="CompagnieAssurance" ToRole="Patient" />
+        </EntityType>
+        <EntityType Name="Departement">
+          <Key>
+            <PropertyRef Name="IdDepartement" />
+          </Key>
+          <Property Name="IdDepartement" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NomDepartement" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Lit1" Relationship="Self.FK_Lit1_Departement" FromRole="Departement" ToRole="Lit1" />
+        </EntityType>
+        <EntityType Name="DossierAdmission">
+          <Key>
+            <PropertyRef Name="IdAdmission" />
+          </Key>
+          <Property Name="IdAdmission" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ChirurgieProgramme" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="DateAdmission" Type="DateTime" Precision="0" />
+          <Property Name="DateChirurgie" Type="DateTime" Precision="0" />
+          <Property Name="DateConge" Type="DateTime" Precision="0" />
+          <Property Name="IdPatient" Type="Int32" />
+          <Property Name="NumeroLit" Type="Int32" />
+          <Property Name="Commodite" Type="String" MaxLength="3" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Lit1" Relationship="Self.FK_DossierAdmission_Lit1" FromRole="DossierAdmission" ToRole="Lit1" />
+          <NavigationProperty Name="Patient" Relationship="Self.FK_DossierAdmission_Patient" FromRole="DossierAdmission" ToRole="Patient" />
+          <NavigationProperty Name="PaiementFrais" Relationship="Self.FK_PaiementFrais_DossierAdmission" FromRole="DossierAdmission" ToRole="PaiementFrais" />
+        </EntityType>
+        <EntityType Name="Lit1">
+          <Key>
+            <PropertyRef Name="NumeroLit" />
+          </Key>
+          <Property Name="NumeroLit" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Occupe" Type="String" MaxLength="10" FixedLength="true" Unicode="true" />
+          <Property Name="NumeroType" Type="Int32" />
+          <Property Name="IdDepartament" Type="Int32" />
+          <NavigationProperty Name="Departement" Relationship="Self.FK_Lit1_Departement" FromRole="Lit1" ToRole="Departement" />
+          <NavigationProperty Name="DossierAdmissions" Relationship="Self.FK_DossierAdmission_Lit1" FromRole="Lit1" ToRole="DossierAdmission" />
+          <NavigationProperty Name="TypeLit" Relationship="Self.FK_Lit1_TypeLit" FromRole="Lit1" ToRole="TypeLit" />
+        </EntityType>
+        <EntityType Name="Medicin">
+          <Key>
+            <PropertyRef Name="IdMedicin" />
+          </Key>
+          <Property Name="IdMedicin" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nom" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Prenom" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Specialite" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Patients" Relationship="Self.FK_Patient_Medicin" FromRole="Medicin" ToRole="Patient" />
+        </EntityType>
+        <EntityType Name="PaiementFrai">
+          <Key>
+            <PropertyRef Name="IdPaiement" />
+          </Key>
+          <Property Name="IdPaiement" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FraisChambre" Type="Double" />
+          <Property Name="FraisComodite" Type="Double" />
+          <Property Name="MontantFacture" Type="Double" />
+          <Property Name="IdAdmission" Type="Int32" />
+          <NavigationProperty Name="DossierAdmission" Relationship="Self.FK_PaiementFrais_DossierAdmission" FromRole="PaiementFrais" ToRole="DossierAdmission" />
+        </EntityType>
+        <EntityType Name="Parent">
+          <Key>
+            <PropertyRef Name="RefParent" />
+          </Key>
+          <Property Name="RefParent" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nom" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Prenom" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Adresse" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Ville" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Province" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CodePostal" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Telephone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Patients" Relationship="Self.FK_Patient_Parent" FromRole="Parent" ToRole="Patient" />
+        </EntityType>
+        <EntityType Name="Patient">
+          <Key>
+            <PropertyRef Name="IdPatient" />
+          </Key>
+          <Property Name="IdPatient" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NSS" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="DateNaissance" Type="DateTime" Precision="0" />
+          <Property Name="Nom" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Prenom" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="TypePatient" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Adresse" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Ville" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Province" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="CodePostal" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Telephone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="IdMedicin" Type="Int32" />
+          <Property Name="IdCompagnie" Type="Int32" />
+          <Property Name="RefParent" Type="Int32" />
+          <NavigationProperty Name="CompagnieAssurance" Relationship="Self.FK_Patient_CompagnieAssurance" FromRole="Patient" ToRole="CompagnieAssurance" />
+          <NavigationProperty Name="DossierAdmissions" Relationship="Self.FK_DossierAdmission_Patient" FromRole="Patient" ToRole="DossierAdmission" />
+          <NavigationProperty Name="Medicin" Relationship="Self.FK_Patient_Medicin" FromRole="Patient" ToRole="Medicin" />
+          <NavigationProperty Name="Parent" Relationship="Self.FK_Patient_Parent" FromRole="Patient" ToRole="Parent" />
+        </EntityType>
+        <EntityType Name="Prepose">
+          <Key>
+            <PropertyRef Name="IdPrepose" />
+          </Key>
+          <Property Name="IdPrepose" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nom" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Prenom" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Specialite" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="sysdiagram">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="TableUser">
+          <Key>
+            <PropertyRef Name="UserName" />
+          </Key>
+          <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="TypeUser" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="TypeLit">
+          <Key>
+            <PropertyRef Name="NumeroType" />
+          </Key>
+          <Property Name="NumeroType" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Lit1" Relationship="Self.FK_Lit1_TypeLit" FromRole="TypeLit" ToRole="Lit1" />
+        </EntityType>
+        <Association Name="FK_Patient_CompagnieAssurance">
+          <End Role="CompagnieAssurance" Type="Self.CompagnieAssurance" Multiplicity="0..1" />
+          <End Role="Patient" Type="Self.Patient" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="CompagnieAssurance">
+              <PropertyRef Name="IdCompagnie" />
+            </Principal>
+            <Dependent Role="Patient">
+              <PropertyRef Name="IdCompagnie" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Lit1_Departement">
+          <End Role="Departement" Type="Self.Departement" Multiplicity="0..1" />
+          <End Role="Lit1" Type="Self.Lit1" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Departement">
+              <PropertyRef Name="IdDepartement" />
+            </Principal>
+            <Dependent Role="Lit1">
+              <PropertyRef Name="IdDepartament" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DossierAdmission_Lit1">
+          <End Role="Lit1" Type="Self.Lit1" Multiplicity="0..1" />
+          <End Role="DossierAdmission" Type="Self.DossierAdmission" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Lit1">
+              <PropertyRef Name="NumeroLit" />
+            </Principal>
+            <Dependent Role="DossierAdmission">
+              <PropertyRef Name="NumeroLit" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_DossierAdmission_Patient">
+          <End Role="Patient" Type="Self.Patient" Multiplicity="0..1" />
+          <End Role="DossierAdmission" Type="Self.DossierAdmission" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Patient">
+              <PropertyRef Name="IdPatient" />
+            </Principal>
+            <Dependent Role="DossierAdmission">
+              <PropertyRef Name="IdPatient" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_PaiementFrais_DossierAdmission">
+          <End Role="DossierAdmission" Type="Self.DossierAdmission" Multiplicity="0..1" />
+          <End Role="PaiementFrais" Type="Self.PaiementFrai" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DossierAdmission">
+              <PropertyRef Name="IdAdmission" />
+            </Principal>
+            <Dependent Role="PaiementFrais">
+              <PropertyRef Name="IdAdmission" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Lit1_TypeLit">
+          <End Role="TypeLit" Type="Self.TypeLit" Multiplicity="0..1" />
+          <End Role="Lit1" Type="Self.Lit1" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TypeLit">
+              <PropertyRef Name="NumeroType" />
+            </Principal>
+            <Dependent Role="Lit1">
+              <PropertyRef Name="NumeroType" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Patient_Medicin">
+          <End Role="Medicin" Type="Self.Medicin" Multiplicity="0..1" />
+          <End Role="Patient" Type="Self.Patient" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Medicin">
+              <PropertyRef Name="IdMedicin" />
+            </Principal>
+            <Dependent Role="Patient">
+              <PropertyRef Name="IdMedicin" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Patient_Parent">
+          <End Role="Parent" Type="Self.Parent" Multiplicity="0..1" />
+          <End Role="Patient" Type="Self.Patient" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Parent">
+              <PropertyRef Name="RefParent" />
+            </Principal>
+            <Dependent Role="Patient">
+              <PropertyRef Name="RefParent" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="NHLEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="CompagnieAssurances" EntityType="Self.CompagnieAssurance" />
+          <EntitySet Name="Departements" EntityType="Self.Departement" />
+          <EntitySet Name="DossierAdmissions" EntityType="Self.DossierAdmission" />
+          <EntitySet Name="Lit1" EntityType="Self.Lit1" />
+          <EntitySet Name="Medicins" EntityType="Self.Medicin" />
+          <EntitySet Name="PaiementFrais" EntityType="Self.PaiementFrai" />
+          <EntitySet Name="Parents" EntityType="Self.Parent" />
+          <EntitySet Name="Patients" EntityType="Self.Patient" />
+          <EntitySet Name="Preposes" EntityType="Self.Prepose" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+          <EntitySet Name="TableUsers" EntityType="Self.TableUser" />
+          <EntitySet Name="TypeLits" EntityType="Self.TypeLit" />
+          <AssociationSet Name="FK_Patient_CompagnieAssurance" Association="Self.FK_Patient_CompagnieAssurance">
+            <End Role="CompagnieAssurance" EntitySet="CompagnieAssurances" />
+            <End Role="Patient" EntitySet="Patients" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Lit1_Departement" Association="Self.FK_Lit1_Departement">
+            <End Role="Departement" EntitySet="Departements" />
+            <End Role="Lit1" EntitySet="Lit1" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DossierAdmission_Lit1" Association="Self.FK_DossierAdmission_Lit1">
+            <End Role="Lit1" EntitySet="Lit1" />
+            <End Role="DossierAdmission" EntitySet="DossierAdmissions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_DossierAdmission_Patient" Association="Self.FK_DossierAdmission_Patient">
+            <End Role="Patient" EntitySet="Patients" />
+            <End Role="DossierAdmission" EntitySet="DossierAdmissions" />
+          </AssociationSet>
+          <AssociationSet Name="FK_PaiementFrais_DossierAdmission" Association="Self.FK_PaiementFrais_DossierAdmission">
+            <End Role="DossierAdmission" EntitySet="DossierAdmissions" />
+            <End Role="PaiementFrais" EntitySet="PaiementFrais" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Lit1_TypeLit" Association="Self.FK_Lit1_TypeLit">
+            <End Role="TypeLit" EntitySet="TypeLits" />
+            <End Role="Lit1" EntitySet="Lit1" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Patient_Medicin" Association="Self.FK_Patient_Medicin">
+            <End Role="Medicin" EntitySet="Medicins" />
+            <End Role="Patient" EntitySet="Patients" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Patient_Parent" Association="Self.FK_Patient_Parent">
+            <End Role="Parent" EntitySet="Parents" />
+            <End Role="Patient" EntitySet="Patients" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="nhlModelStoreContainer" CdmEntityContainer="NHLEntities">
+          <EntitySetMapping Name="CompagnieAssurances">
+            <EntityTypeMapping TypeName="nhlModel.CompagnieAssurance">
+              <MappingFragment StoreEntitySet="CompagnieAssurance">
+                <ScalarProperty Name="IdCompagnie" ColumnName="IdCompagnie" />
+                <ScalarProperty Name="NomCompagnie" ColumnName="NomCompagnie" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Departements">
+            <EntityTypeMapping TypeName="nhlModel.Departement">
+              <MappingFragment StoreEntitySet="Departement">
+                <ScalarProperty Name="IdDepartement" ColumnName="IdDepartement" />
+                <ScalarProperty Name="NomDepartement" ColumnName="NomDepartement" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DossierAdmissions">
+            <EntityTypeMapping TypeName="nhlModel.DossierAdmission">
+              <MappingFragment StoreEntitySet="DossierAdmission">
+                <ScalarProperty Name="IdAdmission" ColumnName="IdAdmission" />
+                <ScalarProperty Name="ChirurgieProgramme" ColumnName="ChirurgieProgramme" />
+                <ScalarProperty Name="DateAdmission" ColumnName="DateAdmission" />
+                <ScalarProperty Name="DateChirurgie" ColumnName="DateChirurgie" />
+                <ScalarProperty Name="DateConge" ColumnName="DateConge" />
+                <ScalarProperty Name="IdPatient" ColumnName="IdPatient" />
+                <ScalarProperty Name="NumeroLit" ColumnName="NumeroLit" />
+                <ScalarProperty Name="Commodite" ColumnName="Commodite" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Lit1">
+            <EntityTypeMapping TypeName="nhlModel.Lit1">
+              <MappingFragment StoreEntitySet="Lit1">
+                <ScalarProperty Name="NumeroLit" ColumnName="NumeroLit" />
+                <ScalarProperty Name="Occupe" ColumnName="Occupe" />
+                <ScalarProperty Name="NumeroType" ColumnName="NumeroType" />
+                <ScalarProperty Name="IdDepartament" ColumnName="IdDepartament" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Medicins">
+            <EntityTypeMapping TypeName="nhlModel.Medicin">
+              <MappingFragment StoreEntitySet="Medicin">
+                <ScalarProperty Name="IdMedicin" ColumnName="IdMedicin" />
+                <ScalarProperty Name="Nom" ColumnName="Nom" />
+                <ScalarProperty Name="Prenom" ColumnName="Prenom" />
+                <ScalarProperty Name="Specialite" ColumnName="Specialite" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PaiementFrais">
+            <EntityTypeMapping TypeName="nhlModel.PaiementFrai">
+              <MappingFragment StoreEntitySet="PaiementFrais">
+                <ScalarProperty Name="IdPaiement" ColumnName="IdPaiement" />
+                <ScalarProperty Name="FraisChambre" ColumnName="FraisChambre" />
+                <ScalarProperty Name="FraisComodite" ColumnName="FraisComodite" />
+                <ScalarProperty Name="MontantFacture" ColumnName="MontantFacture" />
+                <ScalarProperty Name="IdAdmission" ColumnName="IdAdmission" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Parents">
+            <EntityTypeMapping TypeName="nhlModel.Parent">
+              <MappingFragment StoreEntitySet="Parent">
+                <ScalarProperty Name="RefParent" ColumnName="RefParent" />
+                <ScalarProperty Name="Nom" ColumnName="Nom" />
+                <ScalarProperty Name="Prenom" ColumnName="Prenom" />
+                <ScalarProperty Name="Adresse" ColumnName="Adresse" />
+                <ScalarProperty Name="Ville" ColumnName="Ville" />
+                <ScalarProperty Name="Province" ColumnName="Province" />
+                <ScalarProperty Name="CodePostal" ColumnName="CodePostal" />
+                <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Patients">
+            <EntityTypeMapping TypeName="nhlModel.Patient">
+              <MappingFragment StoreEntitySet="Patient">
+                <ScalarProperty Name="IdPatient" ColumnName="IdPatient" />
+                <ScalarProperty Name="NSS" ColumnName="NSS" />
+                <ScalarProperty Name="DateNaissance" ColumnName="DateNaissance" />
+                <ScalarProperty Name="Nom" ColumnName="Nom" />
+                <ScalarProperty Name="Prenom" ColumnName="Prenom" />
+                <ScalarProperty Name="TypePatient" ColumnName="TypePatient" />
+                <ScalarProperty Name="Adresse" ColumnName="Adresse" />
+                <ScalarProperty Name="Ville" ColumnName="Ville" />
+                <ScalarProperty Name="Province" ColumnName="Province" />
+                <ScalarProperty Name="CodePostal" ColumnName="CodePostal" />
+                <ScalarProperty Name="Telephone" ColumnName="Telephone" />
+                <ScalarProperty Name="IdMedicin" ColumnName="IdMedicin" />
+                <ScalarProperty Name="IdCompagnie" ColumnName="IdCompagnie" />
+                <ScalarProperty Name="RefParent" ColumnName="RefParent" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Preposes">
+            <EntityTypeMapping TypeName="nhlModel.Prepose">
+              <MappingFragment StoreEntitySet="Prepose">
+                <ScalarProperty Name="IdPrepose" ColumnName="IdPrepose" />
+                <ScalarProperty Name="Nom" ColumnName="Nom" />
+                <ScalarProperty Name="Prenom" ColumnName="Prenom" />
+                <ScalarProperty Name="Specialite" ColumnName="Specialite" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="sysdiagrams">
+            <EntityTypeMapping TypeName="nhlModel.sysdiagram">
+              <MappingFragment StoreEntitySet="sysdiagrams">
+                <ScalarProperty Name="name" ColumnName="name" />
+                <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+                <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+                <ScalarProperty Name="version" ColumnName="version" />
+                <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TableUsers">
+            <EntityTypeMapping TypeName="nhlModel.TableUser">
+              <MappingFragment StoreEntitySet="TableUser">
+                <ScalarProperty Name="UserName" ColumnName="UserName" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="TypeUser" ColumnName="TypeUser" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TypeLits">
+            <EntityTypeMapping TypeName="nhlModel.TypeLit">
+              <MappingFragment StoreEntitySet="TypeLit">
+                <ScalarProperty Name="NumeroType" ColumnName="NumeroType" />
+                <ScalarProperty Name="Description" ColumnName="Description" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="true" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Aucun" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

@@ -1,0 +1,25 @@
+﻿<Window x:Name="NHL" x:Class="NLH.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NLH"
+        mc:Ignorable="d"
+        Title="LE NORTHERN LIGHTS HOSPITAL" Height="450" Width="702" Loaded="NHL_Loaded">
+    <Grid>
+     
+
+        <Image HorizontalAlignment="Left" Height="417" Margin="0,2,0,0" VerticalAlignment="Top" Width="694" Source="image/presentation.JPG" Grid.ColumnSpan="2"/>
+        <Rectangle Fill="#FF75AFBF" HorizontalAlignment="Left" Height="196" Margin="34,148,0,0" Stroke="Black" VerticalAlignment="Top" Width="265"/>
+        <Label Content="LE NORTHERN LIGHTS HOSPITAL" HorizontalAlignment="Left" Margin="207,23,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Showcard Gothic" Foreground="#FF0B1B66"/>
+        <Label Content="User Name:" HorizontalAlignment="Left" Margin="158,157,0,0" VerticalAlignment="Top" Height="22" FontSize="10" FontWeight="Bold"/>
+        <Label Content="Password:" HorizontalAlignment="Left" Margin="158,206,0,0" VerticalAlignment="Top" Height="22" FontSize="10" FontWeight="Bold" RenderTransformOrigin="0.474,0.045"/>
+        <TextBox x:Name="tbxLogin" HorizontalAlignment="Left" Height="22" Margin="158,179,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="102"/>
+        <PasswordBox x:Name="tbxPass" HorizontalAlignment="Left" Height="22" Margin="158,228,0,0" VerticalAlignment="Top" Width="102"/>
+        <Image HorizontalAlignment="Left" Height="81" Margin="55,179,0,0" VerticalAlignment="Top" Width="75" Source="image/login.jpg"/>
+        <Button x:Name="btnOk" Content="OK" HorizontalAlignment="Left" Height="26" Margin="158,306,0,0" VerticalAlignment="Top" Width="41" BorderBrush="#FFD6B160" Background="#FFF3C96D" Click="btnOk_Click" RenderTransformOrigin="0.585,2.577"/>
+        <Button x:Name="btnExit" Content="Exit" HorizontalAlignment="Left" Height="26" Margin="219,306,0,0" VerticalAlignment="Top" Width="41" BorderBrush="#FFD6B160" Background="#FFF3C96D" Click="btnExit_Click" RenderTransformOrigin="0.659,1.308"/>
+        <ComboBox x:Name="comb1" HorizontalAlignment="Left" Height="24" Margin="158,269,0,0" VerticalAlignment="Top" Width="102"  IsSynchronizedWithCurrentItem="True" ItemsSource="{Binding}" DisplayMemberPath="TypeUser"/>
+        <Image HorizontalAlignment="Left" Height="53" Margin="115,23,0,0" VerticalAlignment="Top" Width="46" Source="image/l2.png" RenderTransformOrigin="1.264,0.535"/>
+    </Grid>
+</Window>

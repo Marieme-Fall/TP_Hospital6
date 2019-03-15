@@ -1,0 +1,39 @@
+﻿<Window x:Class="NLH.AjouterMedicin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NLH"
+        mc:Ignorable="d"
+        Title="AjouterMedicin" Height="500" Width="500" Background="#FF8CD5E0" Loaded="Window_Loaded">
+    <Grid>
+        <Label Content="LE NORTHERN LIGHTS HOSPITAL" HorizontalAlignment="Left" Margin="106,5,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Showcard Gothic" Foreground="#FF0B1B66"/>
+        <Image HorizontalAlignment="Left" Height="53" Margin="20,21,0,0" VerticalAlignment="Top" Width="46" Source="image/l2.png" RenderTransformOrigin="1.264,0.535"/>
+        <TextBox x:Name="tbxNom" HorizontalAlignment="Left" Height="23" Margin="156,115,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbxPrenom" HorizontalAlignment="Left" Height="23" Margin="156,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tbxspes" HorizontalAlignment="Left" Height="23" Margin="156,206,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" RenderTransformOrigin="-2.253,-1.683"/>
+        <Label Content="Nom:" HorizontalAlignment="Left" Margin="84,112,0,0" VerticalAlignment="Top"/>
+        <Label Content="Prenom:" HorizontalAlignment="Left" Margin="84,157,0,0" VerticalAlignment="Top"/>
+        <Label Content="Specialite" HorizontalAlignment="Left" Margin="84,206,0,0" VerticalAlignment="Top"/>
+
+        <DataGrid x:Name="datemed" HorizontalAlignment="Left" AutoGenerateColumns="False" Height="114" Margin="92,259,0,0" VerticalAlignment="Top" Width="315">
+
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding IdMedicin}" Header="IdMedicin"/>
+
+                <DataGridTextColumn Binding="{Binding Nom}" Header="Nom"/>
+                <DataGridTextColumn Binding="{Binding Prenom}" Header="Prenom"/>
+                <DataGridTextColumn Binding="{Binding Specialite}" Header="Specialite"/>
+
+            </DataGrid.Columns>
+        </DataGrid>
+
+
+        <Button x:Name="btnAjouter" Content="Ajouter" HorizontalAlignment="Left" Height="32" Margin="20,406,0,0" VerticalAlignment="Top" Width="99" Click="btnAjouter_Click" RenderTransformOrigin="0.41,0.463"/>
+        <Button x:Name="btnQuitter" Content="Quitter" HorizontalAlignment="Left" Height="32" Margin="368,406,0,0" VerticalAlignment="Top" Width="99" Click="btnQuitter_Click"/>
+        <Image HorizontalAlignment="Left" Height="133" Margin="322,96,0,0" VerticalAlignment="Top" Width="131" Source="image/doctor.png"/>
+        <Label Content=" Ajouter un Medicin" HorizontalAlignment="Left" Height="29" Margin="106,45,0,0" VerticalAlignment="Top" Width="145" Foreground="#FF080B4B" FontWeight="Bold" FontSize="14" FontStyle="Italic"/>
+        <Button Content="Modifier/Supprimer Medicin" HorizontalAlignment="Left" Height="28" Margin="156,406,0,0" VerticalAlignment="Top" Width="161" Click="Button_Click"/>
+
+    </Grid>
+</Window>

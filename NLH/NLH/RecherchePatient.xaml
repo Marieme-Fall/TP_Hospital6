@@ -1,0 +1,40 @@
+﻿<Window x:Class="NLH.RecherchePatient"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NLH"
+        mc:Ignorable="d"
+        Title="RecherchePatient" Height="450" Width="920" Background="#FF8CD5E0">
+    <Grid>
+
+        <Label Content="LE NORTHERN LIGHTS HOSPITAL - Recherche de patiens" HorizontalAlignment="Left" Margin="142,10,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Showcard Gothic" Foreground="#FF0B1B66" Width="574"/>
+        <Image HorizontalAlignment="Left" Height="53" Margin="43,10,0,0" VerticalAlignment="Top" Width="46" Source="image/l2.png" RenderTransformOrigin="1.264,0.535"/>
+        <Label Content="Entrer le NSS du patient recherché:" HorizontalAlignment="Left" Height="31" Margin="32,94,0,0" VerticalAlignment="Top" Width="285" Foreground="#FF640A0A" FontWeight="Bold" FontSize="16" Grid.ColumnSpan="2"/>
+        <DataGrid x:Name="listegride" HorizontalAlignment="Left" AutoGenerateColumns="False" Height="122" Margin="10,156,0,0" VerticalAlignment="Top" Width="882">
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding IdPatient}" Header="IdPatient"/>
+                <DataGridTextColumn Binding="{Binding NSS}" Header="NSS"/>
+                <DataGridTextColumn Binding="{Binding DateNaissance}" Header="DateNaissance"/>
+                <DataGridTextColumn Binding="{Binding Nom}" Header="Nom"/>
+                <DataGridTextColumn Binding="{Binding Prenom}" Header="Prenom"/>
+                <DataGridTextColumn Binding="{Binding TypePatient}" Header="TypePatient"/>
+                <DataGridTextColumn Binding="{Binding Adresse}" Header="Adresse"/>
+                <DataGridTextColumn Binding="{Binding Ville}" Header="Ville"/>
+                <DataGridTextColumn Binding="{Binding Province}" Header="Province"/>
+                <DataGridTextColumn Binding="{Binding CodePostal}" Header="CodePostal"/>
+                <DataGridTextColumn Binding="{Binding Telephone}" Header="Telephone"/>
+                <DataGridTextColumn Binding="{Binding IdMedicin}" Header=" IdMedicin"/>
+                <DataGridTextColumn Binding="{Binding IdCompagnie}" Header="IdCompagnie"/>
+                <DataGridTextColumn Binding="{Binding RefParent}" Header="RefParent"/>
+
+            </DataGrid.Columns>
+
+        </DataGrid>
+        <TextBox x:Name="txtNSS" HorizontalAlignment="Left" Height="25" Margin="339,100,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="132"/>
+        <Button x:Name="btnRech" Content="Rechercher" HorizontalAlignment="Left" Height="25" Margin="530,100,0,0" VerticalAlignment="Top" Width="122" Click="btnRech_Click"/>
+        <Button Content="Quitter" HorizontalAlignment="Left" Height="34" Margin="780,316,0,0" VerticalAlignment="Top" Width="90" Click="Button_Click"/>
+        <Image HorizontalAlignment="Left" Height="72" Margin="824,10,0,0" VerticalAlignment="Top" Width="68" Source="image/add_patient.png" RenderTransformOrigin="0.367,0.091"/>
+
+    </Grid>
+</Window>

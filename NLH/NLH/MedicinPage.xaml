@@ -1,0 +1,39 @@
+﻿<Window x:Class="NLH.MedicinPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:NLH"
+        mc:Ignorable="d"
+        Title="MedicinPage" Height="450" Width="900" Background="#FF8CD5E0" Loaded="Window_Loaded">
+    <Grid>
+        <Label Content="LE NORTHERN LIGHTS HOSPITAL " HorizontalAlignment="Left" Margin="199,20,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Showcard Gothic" Foreground="#FF0B1B66"/>
+        <Label Content="PAGE DE MEDICIN" HorizontalAlignment="Left" Height="32" Margin="199,53,0,0" VerticalAlignment="Top" Width="172" FontSize="14" FontWeight="Bold" FontStyle="Italic" Foreground="#FF05054D"/>
+        <Image HorizontalAlignment="Left" Height="53" Margin="36,32,0,0" VerticalAlignment="Top" Width="46" Source="image/l2.png" RenderTransformOrigin="1.264,0.535"/>
+        <Label Content="Dossier d'admission:" HorizontalAlignment="Left" Height="31" Margin="27,128,0,0" VerticalAlignment="Top" Width="114" RenderTransformOrigin="0.801,-0.003"/>
+        <ComboBox x:Name="comb1" HorizontalAlignment="Left" Height="27" Margin="156,128,0,0" VerticalAlignment="Top" Width="120" IsSynchronizedWithCurrentItem="True" ItemsSource="{Binding}" DisplayMemberPath="IdAdmission" SelectionChanged="comb1_SelectionChanged" />
+        <Label Content="Date d'admission:" HorizontalAlignment="Left" Height="27" Margin="27,180,0,0" VerticalAlignment="Top" Width="102"/>
+        <Label Content="Date de congé:" HorizontalAlignment="Left" Height="27" Margin="27,223,0,0" VerticalAlignment="Top" Width="114" RenderTransformOrigin="0.466,0.982"/>
+        <DatePicker x:Name="dateCong" HorizontalAlignment="Left" Height="31" Margin="156,223,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textDateAd" HorizontalAlignment="Left" Height="27" Margin="156,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnDon" Content="Donner congé" HorizontalAlignment="Left" Height="38" Margin="730,351,0,0" VerticalAlignment="Top" Width="126" Click="btnDon_Click"/>
+        <DataGrid x:Name="dateAd1" HorizontalAlignment="Left" AutoGenerateColumns="False" Height="127" Margin="311,113,0,0" VerticalAlignment="Top" Width="571" RenderTransformOrigin="0.443,0.948" >
+
+            <DataGrid.Columns>
+                <DataGridTextColumn Binding="{Binding IdAdmission}" Header="IdAdmission"/>
+                <DataGridTextColumn Binding="{Binding ChirurgieProgramme}" Header="ChirurgieProgramme"/>
+                <DataGridTextColumn Binding="{Binding DateAdmission}" Header="DateAdmission"/>
+                <DataGridTextColumn Binding="{Binding DateChirurgie}" Header="DateChirurgie"/>
+                <DataGridTextColumn Binding="{Binding DateConge}" Header="DateConge"/>
+                <DataGridTextColumn Binding="{Binding IdPatient}" Header="IdPatient"/>
+                <DataGridTextColumn Binding="{Binding NumeroLit}" Header="NumeroLit"/>
+
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Content="Numero Lit:" HorizontalAlignment="Left" Height="27" Margin="27,279,0,0" VerticalAlignment="Top" Width="102"/>
+        <TextBox x:Name="txtNumLit" HorizontalAlignment="Left" Height="27" Margin="156,279,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Occupe:" HorizontalAlignment="Left" Height="27" Margin="27,328,0,0" VerticalAlignment="Top" Width="102"/>
+        <TextBox x:Name="txtOcupp" HorizontalAlignment="Left" Height="27" Margin="156,328,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>

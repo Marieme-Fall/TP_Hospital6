@@ -1,0 +1,277 @@
+F:\aec\sesiunea 3\c#2\TP_Hospital\NLH\NLH\bin\Debug\NLH.exe.config
+F:\aec\sesiunea 3\c#2\TP_Hospital\NLH\NLH\bin\Debug\NLH.exe
+F:\aec\sesiunea 3\c#2\TP_Hospital\NLH\NLH\bin\Debug\NLH.pdb
+F:\aec\sesiunea 3\c#2\TP_Hospital\NLH\NLH\obj\Debug\NLH.csprojAssemblyReference.cache
+F:\aec\sesiunea 3\c#2\TP_Hospital\NLH\NLH\obj\Debug\MainWindow.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital\NLH\NLH\obj\Debug\App.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital\NLH\NLH\obj\Debug\NLH_MarkupCompile.cache
+F:\aec\sesiunea 3\c#2\TP_Hospital\NLH\NLH\obj\Debug\NLH_MarkupCompile.lref
+F:\aec\sesiunea 3\c#2\TP_Hospital\NLH\NLH\obj\Debug\MainWindow.baml
+F:\aec\sesiunea 3\c#2\TP_Hospital\NLH\NLH\obj\Debug\NLH.g.resources
+F:\aec\sesiunea 3\c#2\TP_Hospital\NLH\NLH\obj\Debug\NLH.Properties.Resources.resources
+F:\aec\sesiunea 3\c#2\TP_Hospital\NLH\NLH\obj\Debug\NLH.csproj.GenerateResource.cache
+F:\aec\sesiunea 3\c#2\TP_Hospital\NLH\NLH\obj\Debug\NLH.csproj.CoreCompileInputs.cache
+F:\aec\sesiunea 3\c#2\TP_Hospital\NLH\NLH\obj\Debug\NLH.exe
+F:\aec\sesiunea 3\c#2\TP_Hospital\NLH\NLH\obj\Debug\NLH.pdb
+F:\aec\sesiunea 3\c#2\TP_Hospital\NLH\NLH\obj\Debug\AdminPage.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital\NLH\NLH\obj\Debug\AdminPage.baml
+F:\aec\sesiunea 3\c#2\TP_Hospital2\NLH\NLH\bin\Debug\NLH.exe.config
+F:\aec\sesiunea 3\c#2\TP_Hospital2\NLH\NLH\bin\Debug\NLH.exe
+F:\aec\sesiunea 3\c#2\TP_Hospital2\NLH\NLH\bin\Debug\NLH.pdb
+F:\aec\sesiunea 3\c#2\TP_Hospital2\NLH\NLH\bin\Debug\EntityFramework.dll
+F:\aec\sesiunea 3\c#2\TP_Hospital2\NLH\NLH\bin\Debug\EntityFramework.xml
+F:\aec\sesiunea 3\c#2\TP_Hospital2\NLH\NLH\bin\Debug\fr\EntityFramework.resources.dll
+F:\aec\sesiunea 3\c#2\TP_Hospital2\NLH\NLH\obj\Debug\NLH.csprojAssemblyReference.cache
+F:\aec\sesiunea 3\c#2\TP_Hospital2\NLH\NLH\obj\Debug\AdminPage.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital2\NLH\NLH\obj\Debug\MainWindow.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital2\NLH\NLH\obj\Debug\MedicinPage.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital2\NLH\NLH\obj\Debug\PreposePage.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital2\NLH\NLH\obj\Debug\App.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital2\NLH\NLH\obj\Debug\NLH_Content.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital2\NLH\NLH\obj\Debug\NLH_MarkupCompile.cache
+F:\aec\sesiunea 3\c#2\TP_Hospital2\NLH\NLH\obj\Debug\NLH_MarkupCompile.lref
+F:\aec\sesiunea 3\c#2\TP_Hospital2\NLH\NLH\obj\Debug\AdminPage.baml
+F:\aec\sesiunea 3\c#2\TP_Hospital2\NLH\NLH\obj\Debug\MainWindow.baml
+F:\aec\sesiunea 3\c#2\TP_Hospital2\NLH\NLH\obj\Debug\MedicinPage.baml
+F:\aec\sesiunea 3\c#2\TP_Hospital2\NLH\NLH\obj\Debug\PreposePage.baml
+F:\aec\sesiunea 3\c#2\TP_Hospital2\NLH\NLH\obj\Debug\NLH.g.resources
+F:\aec\sesiunea 3\c#2\TP_Hospital2\NLH\NLH\obj\Debug\NLH.Properties.Resources.resources
+F:\aec\sesiunea 3\c#2\TP_Hospital2\NLH\NLH\obj\Debug\NLH.csproj.GenerateResource.cache
+F:\aec\sesiunea 3\c#2\TP_Hospital2\NLH\NLH\obj\Debug\NLH.csproj.CoreCompileInputs.cache
+F:\aec\sesiunea 3\c#2\TP_Hospital2\NLH\NLH\obj\Debug\NLH.csproj.CopyComplete
+F:\aec\sesiunea 3\c#2\TP_Hospital2\NLH\NLH\obj\Debug\NLH.exe
+F:\aec\sesiunea 3\c#2\TP_Hospital2\NLH\NLH\obj\Debug\NLH.pdb
+F:\aec\sesiunea 3\c#2\TP_Hospital2\NLH\NLH\obj\Debug\TableauConsultation.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital2\NLH\NLH\obj\Debug\TableauConsultation.baml
+F:\aec\sesiunea 3\c#2\TP_Hospital2\NLH\NLH\obj\Debug\GestionMed.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital2\NLH\NLH\obj\Debug\GestionPrepose.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital2\NLH\NLH\obj\Debug\GestionMed.baml
+F:\aec\sesiunea 3\c#2\TP_Hospital2\NLH\NLH\obj\Debug\GestionPrepose.baml
+F:\aec\sesiunea 3\c#2\TP_Hospital2\NLH\NLH\obj\Debug\GestionPatient.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital2\NLH\NLH\obj\Debug\Inscription.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital2\NLH\NLH\obj\Debug\RecherchePatient.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital2\NLH\NLH\obj\Debug\GestionPatient.baml
+F:\aec\sesiunea 3\c#2\TP_Hospital2\NLH\NLH\obj\Debug\Inscription.baml
+F:\aec\sesiunea 3\c#2\TP_Hospital2\NLH\NLH\obj\Debug\RecherchePatient.baml
+F:\aec\sesiunea 3\c#2\TP_Hospital3\NLH\NLH\bin\Debug\NLH.exe.config
+F:\aec\sesiunea 3\c#2\TP_Hospital3\NLH\NLH\bin\Debug\NLH.exe
+F:\aec\sesiunea 3\c#2\TP_Hospital3\NLH\NLH\bin\Debug\NLH.pdb
+F:\aec\sesiunea 3\c#2\TP_Hospital3\NLH\NLH\bin\Debug\EntityFramework.dll
+F:\aec\sesiunea 3\c#2\TP_Hospital3\NLH\NLH\bin\Debug\EntityFramework.xml
+F:\aec\sesiunea 3\c#2\TP_Hospital3\NLH\NLH\bin\Debug\fr\EntityFramework.resources.dll
+F:\aec\sesiunea 3\c#2\TP_Hospital3\NLH\NLH\obj\Debug\NLH.csprojAssemblyReference.cache
+F:\aec\sesiunea 3\c#2\TP_Hospital3\NLH\NLH\obj\Debug\AdminPage.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital3\NLH\NLH\obj\Debug\GestionMed.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital3\NLH\NLH\obj\Debug\GestionPatient.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital3\NLH\NLH\obj\Debug\GestionPrepose.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital3\NLH\NLH\obj\Debug\Inscription.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital3\NLH\NLH\obj\Debug\MainWindow.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital3\NLH\NLH\obj\Debug\MedicinPage.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital3\NLH\NLH\obj\Debug\PreposePage.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital3\NLH\NLH\obj\Debug\RecherchePatient.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital3\NLH\NLH\obj\Debug\TableauConsultation.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital3\NLH\NLH\obj\Debug\App.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital3\NLH\NLH\obj\Debug\NLH_Content.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital3\NLH\NLH\obj\Debug\NLH_MarkupCompile.cache
+F:\aec\sesiunea 3\c#2\TP_Hospital3\NLH\NLH\obj\Debug\NLH_MarkupCompile.lref
+F:\aec\sesiunea 3\c#2\TP_Hospital3\NLH\NLH\obj\Debug\AdminPage.baml
+F:\aec\sesiunea 3\c#2\TP_Hospital3\NLH\NLH\obj\Debug\GestionMed.baml
+F:\aec\sesiunea 3\c#2\TP_Hospital3\NLH\NLH\obj\Debug\GestionPatient.baml
+F:\aec\sesiunea 3\c#2\TP_Hospital3\NLH\NLH\obj\Debug\GestionPrepose.baml
+F:\aec\sesiunea 3\c#2\TP_Hospital3\NLH\NLH\obj\Debug\Inscription.baml
+F:\aec\sesiunea 3\c#2\TP_Hospital3\NLH\NLH\obj\Debug\MainWindow.baml
+F:\aec\sesiunea 3\c#2\TP_Hospital3\NLH\NLH\obj\Debug\MedicinPage.baml
+F:\aec\sesiunea 3\c#2\TP_Hospital3\NLH\NLH\obj\Debug\PreposePage.baml
+F:\aec\sesiunea 3\c#2\TP_Hospital3\NLH\NLH\obj\Debug\RecherchePatient.baml
+F:\aec\sesiunea 3\c#2\TP_Hospital3\NLH\NLH\obj\Debug\TableauConsultation.baml
+F:\aec\sesiunea 3\c#2\TP_Hospital3\NLH\NLH\obj\Debug\NLH.g.resources
+F:\aec\sesiunea 3\c#2\TP_Hospital3\NLH\NLH\obj\Debug\NLH.Properties.Resources.resources
+F:\aec\sesiunea 3\c#2\TP_Hospital3\NLH\NLH\obj\Debug\NLH.csproj.GenerateResource.cache
+F:\aec\sesiunea 3\c#2\TP_Hospital3\NLH\NLH\obj\Debug\NLH.csproj.CoreCompileInputs.cache
+F:\aec\sesiunea 3\c#2\TP_Hospital3\NLH\NLH\obj\Debug\NLH.csproj.CopyComplete
+F:\aec\sesiunea 3\c#2\TP_Hospital3\NLH\NLH\obj\Debug\NLH.exe
+F:\aec\sesiunea 3\c#2\TP_Hospital3\NLH\NLH\obj\Debug\NLH.pdb
+F:\aec\sesiunea 3\c#2\TP_Hospital4\NLH\NLH\bin\Debug\NLH.exe.config
+F:\aec\sesiunea 3\c#2\TP_Hospital4\NLH\NLH\bin\Debug\NLH.exe
+F:\aec\sesiunea 3\c#2\TP_Hospital4\NLH\NLH\bin\Debug\NLH.pdb
+F:\aec\sesiunea 3\c#2\TP_Hospital4\NLH\NLH\bin\Debug\EntityFramework.dll
+F:\aec\sesiunea 3\c#2\TP_Hospital4\NLH\NLH\bin\Debug\EntityFramework.xml
+F:\aec\sesiunea 3\c#2\TP_Hospital4\NLH\NLH\bin\Debug\fr\EntityFramework.resources.dll
+F:\aec\sesiunea 3\c#2\TP_Hospital4\NLH\NLH\obj\Debug\NLH.csprojAssemblyReference.cache
+F:\aec\sesiunea 3\c#2\TP_Hospital4\NLH\NLH\obj\Debug\AdminPage.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital4\NLH\NLH\obj\Debug\GestionMed.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital4\NLH\NLH\obj\Debug\GestionPatient.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital4\NLH\NLH\obj\Debug\GestionPrepose.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital4\NLH\NLH\obj\Debug\Inscription.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital4\NLH\NLH\obj\Debug\MainWindow.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital4\NLH\NLH\obj\Debug\MedicinPage.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital4\NLH\NLH\obj\Debug\PreposePage.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital4\NLH\NLH\obj\Debug\RecherchePatient.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital4\NLH\NLH\obj\Debug\TableauConsultation.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital4\NLH\NLH\obj\Debug\App.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital4\NLH\NLH\obj\Debug\NLH_Content.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital4\NLH\NLH\obj\Debug\NLH_MarkupCompile.cache
+F:\aec\sesiunea 3\c#2\TP_Hospital4\NLH\NLH\obj\Debug\NLH_MarkupCompile.lref
+F:\aec\sesiunea 3\c#2\TP_Hospital4\NLH\NLH\obj\Debug\AdminPage.baml
+F:\aec\sesiunea 3\c#2\TP_Hospital4\NLH\NLH\obj\Debug\GestionMed.baml
+F:\aec\sesiunea 3\c#2\TP_Hospital4\NLH\NLH\obj\Debug\GestionPatient.baml
+F:\aec\sesiunea 3\c#2\TP_Hospital4\NLH\NLH\obj\Debug\GestionPrepose.baml
+F:\aec\sesiunea 3\c#2\TP_Hospital4\NLH\NLH\obj\Debug\Inscription.baml
+F:\aec\sesiunea 3\c#2\TP_Hospital4\NLH\NLH\obj\Debug\MainWindow.baml
+F:\aec\sesiunea 3\c#2\TP_Hospital4\NLH\NLH\obj\Debug\MedicinPage.baml
+F:\aec\sesiunea 3\c#2\TP_Hospital4\NLH\NLH\obj\Debug\PreposePage.baml
+F:\aec\sesiunea 3\c#2\TP_Hospital4\NLH\NLH\obj\Debug\RecherchePatient.baml
+F:\aec\sesiunea 3\c#2\TP_Hospital4\NLH\NLH\obj\Debug\TableauConsultation.baml
+F:\aec\sesiunea 3\c#2\TP_Hospital4\NLH\NLH\obj\Debug\NLH.g.resources
+F:\aec\sesiunea 3\c#2\TP_Hospital4\NLH\NLH\obj\Debug\NLH.Properties.Resources.resources
+F:\aec\sesiunea 3\c#2\TP_Hospital4\NLH\NLH\obj\Debug\NLH.csproj.GenerateResource.cache
+F:\aec\sesiunea 3\c#2\TP_Hospital4\NLH\NLH\obj\Debug\NLH.csproj.CoreCompileInputs.cache
+F:\aec\sesiunea 3\c#2\TP_Hospital4\NLH\NLH\obj\Debug\NLH.csproj.CopyComplete
+F:\aec\sesiunea 3\c#2\TP_Hospital4\NLH\NLH\obj\Debug\NLH.exe
+F:\aec\sesiunea 3\c#2\TP_Hospital4\NLH\NLH\obj\Debug\NLH.pdb
+F:\aec\sesiunea 3\c#2\TP_Hospital4\NLH\NLH\obj\Debug\AjouterMedicin.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital4\NLH\NLH\obj\Debug\AjouterMedicin.baml
+F:\aec\sesiunea 3\c#2\TP_Hospital4\NLH\NLH\obj\Debug\AjouterPrepose.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital4\NLH\NLH\obj\Debug\AjouterPrepose.baml
+F:\aec\sesiunea 3\c#2\TP_Hospital4\NLH\NLH\obj\Debug\AjouterPatient.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital4\NLH\NLH\obj\Debug\AjouterPatient.baml
+F:\aec\sesiunea 3\c#2\TP_Hospital5\NLH\NLH\bin\Debug\NLH.exe.config
+F:\aec\sesiunea 3\c#2\TP_Hospital5\NLH\NLH\bin\Debug\NLH.exe
+F:\aec\sesiunea 3\c#2\TP_Hospital5\NLH\NLH\bin\Debug\NLH.pdb
+F:\aec\sesiunea 3\c#2\TP_Hospital5\NLH\NLH\bin\Debug\EntityFramework.dll
+F:\aec\sesiunea 3\c#2\TP_Hospital5\NLH\NLH\bin\Debug\EntityFramework.xml
+F:\aec\sesiunea 3\c#2\TP_Hospital5\NLH\NLH\bin\Debug\fr\EntityFramework.resources.dll
+F:\aec\sesiunea 3\c#2\TP_Hospital5\NLH\NLH\obj\Debug\NLH.csprojAssemblyReference.cache
+F:\aec\sesiunea 3\c#2\TP_Hospital5\NLH\NLH\obj\Debug\AdminPage.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital5\NLH\NLH\obj\Debug\AjouterMedicin.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital5\NLH\NLH\obj\Debug\AjouterOption.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital5\NLH\NLH\obj\Debug\AjouterPatient.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital5\NLH\NLH\obj\Debug\AjouterPrepose.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital5\NLH\NLH\obj\Debug\GestionMed.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital5\NLH\NLH\obj\Debug\GestionPatient.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital5\NLH\NLH\obj\Debug\GestionPrepose.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital5\NLH\NLH\obj\Debug\Inscription.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital5\NLH\NLH\obj\Debug\MainWindow.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital5\NLH\NLH\obj\Debug\MedicinPage.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital5\NLH\NLH\obj\Debug\PreposePage.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital5\NLH\NLH\obj\Debug\RecherchePatient.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital5\NLH\NLH\obj\Debug\TableauConsultation.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital5\NLH\NLH\obj\Debug\App.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital5\NLH\NLH\obj\Debug\NLH_Content.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital5\NLH\NLH\obj\Debug\NLH_MarkupCompile.cache
+F:\aec\sesiunea 3\c#2\TP_Hospital5\NLH\NLH\obj\Debug\NLH_MarkupCompile.lref
+F:\aec\sesiunea 3\c#2\TP_Hospital5\NLH\NLH\obj\Debug\AdminPage.baml
+F:\aec\sesiunea 3\c#2\TP_Hospital5\NLH\NLH\obj\Debug\AjouterMedicin.baml
+F:\aec\sesiunea 3\c#2\TP_Hospital5\NLH\NLH\obj\Debug\AjouterPatient.baml
+F:\aec\sesiunea 3\c#2\TP_Hospital5\NLH\NLH\obj\Debug\AjouterPrepose.baml
+F:\aec\sesiunea 3\c#2\TP_Hospital5\NLH\NLH\obj\Debug\GestionMed.baml
+F:\aec\sesiunea 3\c#2\TP_Hospital5\NLH\NLH\obj\Debug\GestionPatient.baml
+F:\aec\sesiunea 3\c#2\TP_Hospital5\NLH\NLH\obj\Debug\GestionPrepose.baml
+F:\aec\sesiunea 3\c#2\TP_Hospital5\NLH\NLH\obj\Debug\Inscription.baml
+F:\aec\sesiunea 3\c#2\TP_Hospital5\NLH\NLH\obj\Debug\MainWindow.baml
+F:\aec\sesiunea 3\c#2\TP_Hospital5\NLH\NLH\obj\Debug\MedicinPage.baml
+F:\aec\sesiunea 3\c#2\TP_Hospital5\NLH\NLH\obj\Debug\PreposePage.baml
+F:\aec\sesiunea 3\c#2\TP_Hospital5\NLH\NLH\obj\Debug\RecherchePatient.baml
+F:\aec\sesiunea 3\c#2\TP_Hospital5\NLH\NLH\obj\Debug\TableauConsultation.baml
+F:\aec\sesiunea 3\c#2\TP_Hospital5\NLH\NLH\obj\Debug\AjouterOption.baml
+F:\aec\sesiunea 3\c#2\TP_Hospital5\NLH\NLH\obj\Debug\NLH.g.resources
+F:\aec\sesiunea 3\c#2\TP_Hospital5\NLH\NLH\obj\Debug\NLH.Properties.Resources.resources
+F:\aec\sesiunea 3\c#2\TP_Hospital5\NLH\NLH\obj\Debug\NLH.csproj.GenerateResource.cache
+F:\aec\sesiunea 3\c#2\TP_Hospital5\NLH\NLH\obj\Debug\NLH.csproj.CoreCompileInputs.cache
+F:\aec\sesiunea 3\c#2\TP_Hospital5\NLH\NLH\obj\Debug\NLH.csproj.CopyComplete
+F:\aec\sesiunea 3\c#2\TP_Hospital5\NLH\NLH\obj\Debug\NLH.exe
+F:\aec\sesiunea 3\c#2\TP_Hospital5\NLH\NLH\obj\Debug\NLH.pdb
+F:\aec\sesiunea 3\c#2\TP_Hospital6\NLH\NLH\bin\Debug\NLH.exe.config
+F:\aec\sesiunea 3\c#2\TP_Hospital6\NLH\NLH\bin\Debug\NLH.exe
+F:\aec\sesiunea 3\c#2\TP_Hospital6\NLH\NLH\bin\Debug\NLH.pdb
+F:\aec\sesiunea 3\c#2\TP_Hospital6\NLH\NLH\bin\Debug\EntityFramework.dll
+F:\aec\sesiunea 3\c#2\TP_Hospital6\NLH\NLH\bin\Debug\EntityFramework.xml
+F:\aec\sesiunea 3\c#2\TP_Hospital6\NLH\NLH\bin\Debug\fr\EntityFramework.resources.dll
+F:\aec\sesiunea 3\c#2\TP_Hospital6\NLH\NLH\obj\Debug\NLH.csprojAssemblyReference.cache
+F:\aec\sesiunea 3\c#2\TP_Hospital6\NLH\NLH\obj\Debug\AdminPage.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital6\NLH\NLH\obj\Debug\AjouterMedicin.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital6\NLH\NLH\obj\Debug\AjouterOption.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital6\NLH\NLH\obj\Debug\AjouterPatient.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital6\NLH\NLH\obj\Debug\AjouterPrepose.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital6\NLH\NLH\obj\Debug\GestionMed.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital6\NLH\NLH\obj\Debug\GestionPatient.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital6\NLH\NLH\obj\Debug\GestionPrepose.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital6\NLH\NLH\obj\Debug\Inscription.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital6\NLH\NLH\obj\Debug\MainWindow.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital6\NLH\NLH\obj\Debug\MedicinPage.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital6\NLH\NLH\obj\Debug\PreposePage.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital6\NLH\NLH\obj\Debug\RecherchePatient.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital6\NLH\NLH\obj\Debug\TableauConsultation.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital6\NLH\NLH\obj\Debug\App.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital6\NLH\NLH\obj\Debug\NLH_Content.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital6\NLH\NLH\obj\Debug\NLH_MarkupCompile.cache
+F:\aec\sesiunea 3\c#2\TP_Hospital6\NLH\NLH\obj\Debug\NLH_MarkupCompile.lref
+F:\aec\sesiunea 3\c#2\TP_Hospital6\NLH\NLH\obj\Debug\AdminPage.baml
+F:\aec\sesiunea 3\c#2\TP_Hospital6\NLH\NLH\obj\Debug\AjouterMedicin.baml
+F:\aec\sesiunea 3\c#2\TP_Hospital6\NLH\NLH\obj\Debug\AjouterOption.baml
+F:\aec\sesiunea 3\c#2\TP_Hospital6\NLH\NLH\obj\Debug\AjouterPatient.baml
+F:\aec\sesiunea 3\c#2\TP_Hospital6\NLH\NLH\obj\Debug\AjouterPrepose.baml
+F:\aec\sesiunea 3\c#2\TP_Hospital6\NLH\NLH\obj\Debug\GestionMed.baml
+F:\aec\sesiunea 3\c#2\TP_Hospital6\NLH\NLH\obj\Debug\GestionPatient.baml
+F:\aec\sesiunea 3\c#2\TP_Hospital6\NLH\NLH\obj\Debug\GestionPrepose.baml
+F:\aec\sesiunea 3\c#2\TP_Hospital6\NLH\NLH\obj\Debug\Inscription.baml
+F:\aec\sesiunea 3\c#2\TP_Hospital6\NLH\NLH\obj\Debug\MainWindow.baml
+F:\aec\sesiunea 3\c#2\TP_Hospital6\NLH\NLH\obj\Debug\MedicinPage.baml
+F:\aec\sesiunea 3\c#2\TP_Hospital6\NLH\NLH\obj\Debug\PreposePage.baml
+F:\aec\sesiunea 3\c#2\TP_Hospital6\NLH\NLH\obj\Debug\RecherchePatient.baml
+F:\aec\sesiunea 3\c#2\TP_Hospital6\NLH\NLH\obj\Debug\TableauConsultation.baml
+F:\aec\sesiunea 3\c#2\TP_Hospital6\NLH\NLH\obj\Debug\NLH.g.resources
+F:\aec\sesiunea 3\c#2\TP_Hospital6\NLH\NLH\obj\Debug\NLH.Properties.Resources.resources
+F:\aec\sesiunea 3\c#2\TP_Hospital6\NLH\NLH\obj\Debug\NLH.csproj.GenerateResource.cache
+F:\aec\sesiunea 3\c#2\TP_Hospital6\NLH\NLH\obj\Debug\NLH.csproj.CoreCompileInputs.cache
+F:\aec\sesiunea 3\c#2\TP_Hospital6\NLH\NLH\obj\Debug\NLH.csproj.CopyComplete
+F:\aec\sesiunea 3\c#2\TP_Hospital6\NLH\NLH\obj\Debug\NLH.exe
+F:\aec\sesiunea 3\c#2\TP_Hospital6\NLH\NLH\obj\Debug\NLH.pdb
+F:\aec\sesiunea 3\c#2\TP_Hospital6\NLH\NLH\obj\Debug\Paiement.g.cs
+F:\aec\sesiunea 3\c#2\TP_Hospital6\NLH\NLH\obj\Debug\Paiement.baml
+C:\Users\Marieme\Desktop\TP_Hospital6\NLH\NLH\bin\Debug\NLH.exe.config
+C:\Users\Marieme\Desktop\TP_Hospital6\NLH\NLH\obj\Debug\NLH.exe
+C:\Users\Marieme\Desktop\TP_Hospital6\NLH\NLH\obj\Debug\NLH.pdb
+C:\Users\Marieme\Desktop\TP_Hospital6\NLH\NLH\bin\Debug\NLH.exe
+C:\Users\Marieme\Desktop\TP_Hospital6\NLH\NLH\bin\Debug\NLH.pdb
+C:\Users\Marieme\Desktop\TP_Hospital6\NLH\NLH\bin\Debug\EntityFramework.dll
+C:\Users\Marieme\Desktop\TP_Hospital6\NLH\NLH\bin\Debug\EntityFramework.xml
+C:\Users\Marieme\Desktop\TP_Hospital6\NLH\NLH\bin\Debug\fr\EntityFramework.resources.dll
+C:\Users\Marieme\Desktop\TP_Hospital6\NLH\NLH\obj\Debug\NLH.csprojResolveAssemblyReference.cache
+C:\Users\Marieme\Desktop\TP_Hospital6\NLH\NLH\obj\Debug\AdminPage.g.cs
+C:\Users\Marieme\Desktop\TP_Hospital6\NLH\NLH\obj\Debug\AjouterMedicin.g.cs
+C:\Users\Marieme\Desktop\TP_Hospital6\NLH\NLH\obj\Debug\AjouterOption.g.cs
+C:\Users\Marieme\Desktop\TP_Hospital6\NLH\NLH\obj\Debug\AjouterPatient.g.cs
+C:\Users\Marieme\Desktop\TP_Hospital6\NLH\NLH\obj\Debug\AjouterPrepose.g.cs
+C:\Users\Marieme\Desktop\TP_Hospital6\NLH\NLH\obj\Debug\GestionMed.g.cs
+C:\Users\Marieme\Desktop\TP_Hospital6\NLH\NLH\obj\Debug\GestionPatient.g.cs
+C:\Users\Marieme\Desktop\TP_Hospital6\NLH\NLH\obj\Debug\GestionPrepose.g.cs
+C:\Users\Marieme\Desktop\TP_Hospital6\NLH\NLH\obj\Debug\Inscription.g.cs
+C:\Users\Marieme\Desktop\TP_Hospital6\NLH\NLH\obj\Debug\MainWindow.g.cs
+C:\Users\Marieme\Desktop\TP_Hospital6\NLH\NLH\obj\Debug\MedicinPage.g.cs
+C:\Users\Marieme\Desktop\TP_Hospital6\NLH\NLH\obj\Debug\Paiement.g.cs
+C:\Users\Marieme\Desktop\TP_Hospital6\NLH\NLH\obj\Debug\PreposePage.g.cs
+C:\Users\Marieme\Desktop\TP_Hospital6\NLH\NLH\obj\Debug\RecherchePatient.g.cs
+C:\Users\Marieme\Desktop\TP_Hospital6\NLH\NLH\obj\Debug\TableauConsultation.g.cs
+C:\Users\Marieme\Desktop\TP_Hospital6\NLH\NLH\obj\Debug\App.g.cs
+C:\Users\Marieme\Desktop\TP_Hospital6\NLH\NLH\obj\Debug\NLH_Content.g.cs
+C:\Users\Marieme\Desktop\TP_Hospital6\NLH\NLH\obj\Debug\NLH_MarkupCompile.cache
+C:\Users\Marieme\Desktop\TP_Hospital6\NLH\NLH\obj\Debug\NLH_MarkupCompile.lref
+C:\Users\Marieme\Desktop\TP_Hospital6\NLH\NLH\obj\Debug\AdminPage.baml
+C:\Users\Marieme\Desktop\TP_Hospital6\NLH\NLH\obj\Debug\AjouterMedicin.baml
+C:\Users\Marieme\Desktop\TP_Hospital6\NLH\NLH\obj\Debug\AjouterOption.baml
+C:\Users\Marieme\Desktop\TP_Hospital6\NLH\NLH\obj\Debug\AjouterPatient.baml
+C:\Users\Marieme\Desktop\TP_Hospital6\NLH\NLH\obj\Debug\AjouterPrepose.baml
+C:\Users\Marieme\Desktop\TP_Hospital6\NLH\NLH\obj\Debug\GestionMed.baml
+C:\Users\Marieme\Desktop\TP_Hospital6\NLH\NLH\obj\Debug\GestionPatient.baml
+C:\Users\Marieme\Desktop\TP_Hospital6\NLH\NLH\obj\Debug\GestionPrepose.baml
+C:\Users\Marieme\Desktop\TP_Hospital6\NLH\NLH\obj\Debug\Inscription.baml
+C:\Users\Marieme\Desktop\TP_Hospital6\NLH\NLH\obj\Debug\MainWindow.baml
+C:\Users\Marieme\Desktop\TP_Hospital6\NLH\NLH\obj\Debug\MedicinPage.baml
+C:\Users\Marieme\Desktop\TP_Hospital6\NLH\NLH\obj\Debug\Paiement.baml
+C:\Users\Marieme\Desktop\TP_Hospital6\NLH\NLH\obj\Debug\PreposePage.baml
+C:\Users\Marieme\Desktop\TP_Hospital6\NLH\NLH\obj\Debug\RecherchePatient.baml
+C:\Users\Marieme\Desktop\TP_Hospital6\NLH\NLH\obj\Debug\TableauConsultation.baml
+C:\Users\Marieme\Desktop\TP_Hospital6\NLH\NLH\obj\Debug\NLH.g.resources
+C:\Users\Marieme\Desktop\TP_Hospital6\NLH\NLH\obj\Debug\NLH.Properties.Resources.resources
+C:\Users\Marieme\Desktop\TP_Hospital6\NLH\NLH\obj\Debug\NLH.csproj.GenerateResource.Cache
